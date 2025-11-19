@@ -18,3 +18,10 @@ class Bus extends Vehicle {
         console.log("dhaka to chittagong")
     }
 }
+const greenLine = new Bus("GreenLine",1234,"70");
+console.log(greenLine);
+
+
+console.log(Bus);
+console.log(Vehicle);
+// console.log(Bus);
