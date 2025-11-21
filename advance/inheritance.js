@@ -25,3 +25,11 @@ console.log(greenLine);
 console.log(Bus);
 console.log(Vehicle);
 // console.log(Bus);
+
+
+// const person = "zim";
+// const newPerson = person;
+//  newPerson = "yeasir";
+//  console.log(newPerson);
+ 
+

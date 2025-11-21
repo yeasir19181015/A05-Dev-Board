@@ -7,7 +7,20 @@
     <title>Dev Board</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+    
+.title{
+    display: flex;
+    justify-content:space-around ;
+}
+    </style>
+
+
+
+    <script defer src="/JS/dom.js"></script>
 </head>
+
 
 <body class="">
     <header>
@@ -16,9 +29,9 @@
                 <div>
                     <img class="w-10" src="/assets/logo.png" alt="">
                 </div>
-                 <div>
-                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
-                 </div>
+                <div>
+                    <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
             </div>
 
             <div class="flex mr-4 gap-2">
@@ -36,28 +49,127 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <div class=" border rounded shadow-md flex">
-                     <img src="/assets/checkbox.png" alt=""> <h1>Task Assigned</h1>
-                    <h1>05</h1>
+
+    <!-- main section  -->
+
+    <div class="flex flex-row justify-between ">
+
+       
+        <div class="title-parent basis-3/4 mr-10 p-10">
+            <div class=" title  space-x-5 ">
+
+                <div class=" border rounded flex">
+                    <img src="/assets/checkbox.png" alt="">
+                    <h1>Task Assigned <span>05</span></h1>
+
                 </div>
-                <div class=" border rounded shadow-md flex" >
+
+                <div class=" border rounded flex bg-blue-500">
                     <img src="/assets/board.png" alt="">
                     <h1>Discover Something New Today!</h1>
 
                 </div>
-                <div class=" border rounded shadow-md flex">
-
+                <div class=" border rounded flex">
+                    <img src="/assets/calender.png" alt="">
+                    <h1 id="dateToday">
+                    </h1>
                 </div>
             </div>
-        </section>
-        <section>
+            <br>
+            <!-- cards section  -->
+            <div class="">
+                <div class="flex space-x-2">
+                    <div class="card bg-primary text-primary-content w-96">
+                        <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class=" comment_btn btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="comment_btn btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
 
-        </section>
-    </main>
+                </div>
+                <br>
+            <div class="flex space-x-2">
+
+                <div class="card bg-purple-700 text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button id="btn-post-comment" class=" comment_btn btn ">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-primary text-primary-content w-96">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-end">
+                            <button class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="basis-1/4 text-center items-center mb-10 pt-10">
+            <div>
+                <h1>Activity log</h1>
+                <br>
+                <button class="btn bg-blue-500"> Clear History</button>
+            </div>
+            <div>
+               <textarea name="" id="comment-text-box" cols="30" rows="5" ></textarea>
+            </div>
+
+        </div>
+
+
+    </div>
 
 </body>
+
 
 </html>
